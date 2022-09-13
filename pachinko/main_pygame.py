@@ -19,13 +19,15 @@ BLACK = (0, 0, 0)
 
 def random_color_generator():
     STEPS = 200
+    from_color = random_color()
     while True:
-        from_color, to_color = random_color(), random_color()
+        to_color = random_color()
         for alpha in range(0, STEPS):
             yield [
                 int(comp_1 * (1 - alpha / STEPS) + comp_2 * alpha / STEPS)
                 for comp_1, comp_2 in zip(from_color, to_color)
             ]
+        from_color = to_color
 
 
 def random_color():
