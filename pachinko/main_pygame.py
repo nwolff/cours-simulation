@@ -16,15 +16,16 @@ BATCH_SIZE = 30
 WINSIZE = [800, 800]
 BLACK = (0, 0, 0)
 
+COLOR_STEPS = 200
+
 
 def random_color_generator():
-    STEPS = 200
     from_color = random_color()
     while True:
         to_color = random_color()
-        for alpha in range(0, STEPS):
+        for alpha in range(0, COLOR_STEPS):
             yield [
-                int(comp_1 * (1 - alpha / STEPS) + comp_2 * alpha / STEPS)
+                int(comp_1 * (1 - alpha / COLOR_STEPS) + comp_2 * alpha / COLOR_STEPS)
                 for comp_1, comp_2 in zip(from_color, to_color)
             ]
         from_color = to_color

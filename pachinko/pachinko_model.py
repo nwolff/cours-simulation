@@ -2,17 +2,17 @@ import random
 
 
 def top_coord(height):
-    return (0, height)
+    return 0, height
 
 
 def left_child(coord):
     x, y = coord
-    return (x, y - 1)
+    return x, y - 1
 
 
 def right_child(coord):
     x, y = coord
-    return (x + 1, y - 1)
+    return x + 1, y - 1
 
 
 def is_at_bottom(coord):
