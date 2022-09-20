@@ -28,9 +28,9 @@ def un_pas_aléatoire(coord):
         return successeur_droit(coord)
 
 
-def simuler(hauteur):
+def simuler(taille_plinko):
     """Retourne une trajectoire de coordonnées"""
-    coord = sommet(hauteur)
+    coord = sommet(taille_plinko)
     resultat = []
     while not est_en_bas(coord):
         nouvelle_coordonnée = un_pas_aléatoire(coord)
