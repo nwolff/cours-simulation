@@ -4,6 +4,7 @@ import modèle_receptacle
 NOMBRE_DE_JETS = 10_000
 TAILLE_PLINKO = 30
 
+
 if __name__ == "__main__":
     receptacle = modèle_receptacle.nouveau_receptacle(TAILLE_PLINKO)
     for _ in range(NOMBRE_DE_JETS):
