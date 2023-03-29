@@ -1,6 +1,6 @@
-from matplotlib import pyplot as plt
 import modèle_plinko
 import modèle_receptacle
+from matplotlib import pyplot as plt
 
 NOMBRE_DE_JETS = 10_000
 TAILLE_PLINKO = 30

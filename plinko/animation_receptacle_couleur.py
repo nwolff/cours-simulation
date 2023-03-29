@@ -1,8 +1,9 @@
+import random
+import sys
+
 import modèle_plinko
 import modèle_receptacle
 import pygame
-import sys
-import random
 
 NOMBRE_DE_JETS = 10_000
 TAILLE_PLINKO = 30

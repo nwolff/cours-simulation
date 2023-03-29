@@ -1,6 +1,7 @@
-import modèle_plinko
-import arcade
 from collections import namedtuple
+
+import arcade
+import modèle_plinko
 
 NOMBRE_DE_JETS = 10_000
 TAILLE_PLINKO = 30

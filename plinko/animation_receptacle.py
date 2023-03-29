@@ -1,8 +1,8 @@
-from matplotlib import pyplot as plt
-import numpy as np
 import matplotlib.animation as animation
 import modèle_plinko
 import modèle_receptacle
+import numpy as np
+from matplotlib import pyplot as plt
 
 NOMBRE_DE_JETS = 10_000
 TAILLE_PLINKO = 30
