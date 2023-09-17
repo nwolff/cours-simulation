@@ -1,4 +1,6 @@
 -r requirements.txt
 
+mypy
+ruff
 black
 isort
